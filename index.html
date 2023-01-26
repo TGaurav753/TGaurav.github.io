@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Gaurav Tripathi</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="Resume.css"></script>
+    </head>
+    <body>
+        <div class="container1" >
+            <h1><b>Gaurav Tripathi</b></h1>   
+            <h4>Application Developer</h4><br><br><br>
+                <div class="Aboutme">
+                    <div class="abouthead">Hello,<br>I am Gaurav Tripathi<br></div> 
+                    <p>
+                        Application Developer<br> 
+                        working in a reputed IT firm for more than 2 Yeras now.<br><br>
+
+                        Graduated at 2019 and currently pursuing my post garduation.<br><br>
+                        
+                        I believe if you are good at something, try to be better,<br>
+                        if you are better at something, try to be best,<br>
+                        but never stop learning !!<br>
+                        learning is the key to success.<br> <br>
+                    </p> 
+                </div>
+                    
+                <div class="experience">
+                    <div class="exphead"><b>Experiences</b></div><br><br>
+                    <div class="exphead1"><b>Asst System Engineer @ Tata Consultancy Services</b></div>
+                    <p1>
+                        August 2020 - Present<br><br>
+                        worked as an Application Developer in banking and Finance category<br>
+                        was able to improve and developing skills.
+                    </p1><br><br><br>
+                    <div class="exphead2"><b>Supervisor @ Shiv Jyot company</b></div>
+                    <p1>
+                        May 2019 - July 2020<br><br>
+                        worked as a Supervisor to manage inventory<br>
+                        was able to improve my leadership quality.
+                    </p1>
+                </div> <br>  
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="container2">
+            <div class="education">
+                <div class="eduhead1">Master in Computer Applications<br>(MCA)</div>
+                Mumbai University <br> pursuing since 2021<br><br>
+                <br>
+                <div class="eduhead2">Bachelor of Science in <br>Information Technology (BSc IT)</div>
+                Mumbai University <br> 2016 - 2019
+            </div>
+            <div class="skills">
+                <div class="tskills">
+                <div class="shead1">Technical Skills</div>
+                - HTML/CSS/JAVASCRIPT<br>
+                - Unix/Linux/Script<br>
+                - ASP .NET<br>
+                - PLSQL<br>
+                - Autosys<br>
+                - Informatica ETL<br>
+                - Python<br><br>
+                </div>
+
+                <div class="sskills">
+                <div class="shead2">Other Skills</div>
+                - OOPS concept<br>
+                - Agile Methodology<br>
+                - Communication<br>
+                - Team coordination<br>
+                </div>
+            </div>
+        </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="container3">
+            <div class="contacthead">Contact Me </div><br>
+            <div class="email">
+                <div class="ehead">Get In Touch</div><br>
+                <form onsubmit="sendEmail(); reset(); return false;">
+                 <label for="Name">Your Name:</label>
+                  <input type="text" id="name" name="name" style="color:black;">
+                  <br>
+                  <label for="email" > Your Email:</label>
+                  <input type="email" id="email" name="email" style="color:black;">
+                  <br>
+                  <label for="message">Message:</label>
+                  <textarea id="message" rows="4" name="message" style="color:black;"></textarea>
+                  <br>
+                  <button type="submit" id="btn1"> Send Email</button>
+                </form>
+            </div>
+            <div class="social">
+                <div class="sohead">Sites I am available in</div><br>
+                <a target="_blank" href="https://www.instagram.com/mr._gaurav.tripathi/"><img src="insta_img.jpeg"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a target="_blank" href="https://www.facebook.com/gaurav.tripathi.948494/"><img src="facebook_img.jpg"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a target="_blank" href="https://www.linkedin.com/in/gaurav-i-tripathi97/"><img src="linkedin_img.jpg"></a><br><br><br><br><br><br><br><br>
+                <label> Download Resume </label><br>
+                <a target="_blank" href="https://drive.google.com/drive/u/6/folders/1F6OePmUEvZoogdYADbIy_cAmRc12zmVz" download id="download_btn">Download</a>
+            </div>
+        </div>
+        <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+        <script>
+            var btn = document.getElementById('btn1');
+            btn.addEventListener('click',function(e){
+                e.preventDefault()
+                var name=document.getElementById('name').value;
+                var email=document.getElementById('email').value;
+                var message=document.getElementById('message').value;
+                var body= 'Name:' +name + '<br/> Email: ' +email + '<br/> Message: ' +message;
+
+                Email.send({
+                Host : "smtp.elasticemail.com",
+                Username : "gtripathi736@gmail.com",
+                Password : "7A204181D3C926B7FE91A27952CCE2D4DAC7",
+                To : "gtripathi736@gmail.com",
+                From : "gtripathi736@gmail.com",
+                Subject : "Valuable Comments",
+                Body : body
+            }).then(
+             message => alert(message)
+            );
+            })
+
+        </script>
+    </body>
+</html>

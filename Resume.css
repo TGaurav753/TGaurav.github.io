@@ -1,0 +1,195 @@
+body{
+    background-color: #A9A9A9;
+    position: relative;
+}
+
+.container1{
+    height: 110%;
+    position: relative;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-family: "Copperplate, Papyrus, fantasy";
+    font-size: 400%;
+}
+h4{
+    color: black;
+    text-align: center;
+    font-family: "Lucida Console", "Courier New";
+}
+
+.Aboutme{
+    float: left;
+    margin-left: 10%;
+    background-color: white;
+    width: 35%;
+    height: auto;
+    padding: 2%;
+    box-shadow: 50px 50px #404040;
+    animation: fade-in 2s ease-in;
+    position: relative;
+}
+
+@keyframes fade-in {
+    from{opacity: 0;}
+    to{opacity: 2;}
+}
+
+.abouthead{
+    font-size: 300%;
+}
+
+p{
+    font-size: 120%;
+}
+
+
+
+.experience{
+    float: left;
+    margin-left: 10%;
+    background-color: white;
+    width: 35%;
+    height: auto;
+    padding: 20px;
+    box-shadow: 50px 50px #404040;
+    animation: fade-in 2s ease-in;
+    position: relative;
+}
+
+.exphead{
+    text-align: center;
+    font-size: 50px;
+}
+
+.exphead1{
+    text-align: center;
+    font-size: 20px;
+}
+
+.exphead2{
+    text-align: center;
+    font-size: 20px;
+}
+
+
+.container2{
+    height: auto;
+    width: auto;
+    margin: 5%;
+    padding: 5%;
+    animation: fade-in1 2s ease-in;
+    padding-top: 0.5%;
+    position: relative;
+
+}
+@keyframes fade-in1 {
+    from{opacity: 0;}
+    to{opacity: 2;}
+}
+
+.education{
+    float: left;
+    color: black;
+    font-size: 15px;
+    width: auto;
+}
+.eduhead1{
+    font-size: 180%;
+}
+.eduhead2{
+    font-size: 180%;
+}
+
+.skills{
+    float: left;
+    color: black;
+    margin-left: 20% ;
+    width: auto;
+}
+.shead1{
+    font-size: 180%;
+}
+.tskills{  
+    font-size: 15px;
+}
+.shead2{
+    font-size: 180%;
+}
+.sskills{
+    
+    font-size: 15px;
+}
+  
+  
+  
+.container3{
+    height: 50%;
+    width: 100%;
+    padding: 20px;
+    animation: fade-in1 2s ease-in;
+    padding-top: 20px;
+    background-color: black;
+    position: absolute;
+}
+.contacthead{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    
+}
+.email{
+    float: left;
+    margin-left: 50px;
+    background-color: black;
+    width: 300px;
+    height: 390px;
+    padding: 20px;
+    color: white;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.ehead{
+    text-align: center;
+    font-size: 20px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+form button{
+    color: black;
+    width: 150px;
+    border-radius: 30px;
+}
+.social{
+    float: left;
+    color: black;
+    font-size: 15px;
+    width: auto;
+    margin-left: 30%;
+
+}
+.sohead{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+label{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+#download_btn{
+    background-color: white; /* Green background */
+    color: black; /* White text */
+    padding: 5px 20px; /* Some padding */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    border-radius: 10px;
+}
+.message{
+    color: black;
+}
